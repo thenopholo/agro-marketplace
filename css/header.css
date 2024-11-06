@@ -1,0 +1,37 @@
+@import custom_styles.css;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header{
+    flex-direction: row;
+    height: 72px;
+}
+
+#logo {
+  width: 128px;
+  height: 60px;
+}
+
+#location{
+  width: 175px;
+}
+
+#locatio__icon{
+  width: 14px;
+  height: 14px;
+  margin: auto auto;
+}
+
+#location__city{
+  color: #DCFFD7;
+  font-size: 14px;
+  margin: auto auto;
+}
+
+#logs > a{
+  text-decoration: none;
+}

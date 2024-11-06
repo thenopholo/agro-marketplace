@@ -1,11 +1,468 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zé Aluga</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/custom_styles.css">
+    <title>Zé Aluga</title>
 </head>
 <body>
-  
+    <header-component></header-component>
+
+    <!-- HERO SECTION -->
+    <div id="mainCarousel" class="container-fluid carousel slide mt-4" data-bs-ride="carousel">
+    <div class="carousel-indicators custom-indicators">
+        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active rounded" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+
+    <div class="carousel-inner custom-carousel-inner">
+        <!-- Primeiro Slide -->
+        <div class="carousel-item active">
+        <div class="d-flex justify-content-center align-items-center">
+            <img class="banner_black img-fluid me-2" src="assets/images/banner_2 1.png" alt="Banner Black Friday">
+            <img class="banner_hero img-fluid me-2" src="assets/images/banner_hero_01 1.png" alt="Banner Hero">
+        </div>
+        </div>
+
+        <!-- Segundo Slide -->
+        <div class="carousel-item">
+        <div class="d-flex justify-content-center align-items-center">
+            <img class="banner_black img-fluid me-2" src="assets/images/banner_2 1.png" alt="Banner Black Friday">
+            <img class="banner_hero img-fluid me-2" src="assets/images/banner_hero_01 1.png" alt="Banner Hero">
+        </div>
+        </div>
+
+        <!-- Terceiro Slide -->
+        <div class="carousel-item">
+        <div class="d-flex justify-content-center align-items-center">
+            <img class="banner_black img-fluid me-2" src="assets/images/banner_2 1.png" alt="Banner Black Friday">
+            <img class="banner_hero img-fluid me-2" src="assets/images/banner_hero_01 1.png" alt="Banner Hero">
+        </div>
+        </div>
+
+        <!-- Quarto Slide -->
+        <div class="carousel-item">
+        <div class="d-flex justify-content-center align-items-center">
+            <img class="banner_black img-fluid me-2" src="assets/images/banner_2 1.png" alt="Banner Black Friday">
+            <img class="banner_hero img-fluid me-2" src="assets/images/banner_hero_01 1.png" alt="Banner Hero">
+        </div>
+        </div>
+    </div>
+
+    <!-- Controles do Carrossel -->
+    <button class="carousel-control-prev custom-control" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </button>
+    <button class="carousel-control-next custom-control" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
+    </div>
+
+    <!-- CATEGORY SECTION -->
+    <div id="category_section" class="container mt-5 px-4 mx-auto">
+    <div class="row">
+        <div class="col-12">
+            <h2 class="text-start font-family-primary px-2">Categorias</h2>
+        </div>
+
+        <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 g-3 mt-3 mx-auto">
+            <div class="col text-center">
+                <a href="#">
+                <div class="category_btn col-md-2 me-3">
+                    <img class="d-flex align-items-center justify-content-center mb-1" src="assets/images/tractor.png"></img>
+                    <p class="text-center">
+                        Máquinas de<br>Plantio e Colheita
+                    </p>
+                </div>
+                </a>
+            </div>
+
+            <div class="col text-center">
+                <a href="#">
+                <div class="category_btn col-md-2 me-3">
+                    <i class="d-flex bi bi-moisture align-items-center justify-content-center mb-1"></i>
+                    <p class="text-center">
+                        Equipamento<br>de Irrigação
+                    </p>
+                </div>
+                </a>
+            </div>
+
+            <div class="col text-center">
+                <a href="#">
+                <div class="category_btn col-md-2 me-3">
+                    <img class="d-flex align-items-center justify-content-center mb-1" src="assets/images/drone.png"></img>
+                    <p class="text-center">
+                        Tecnologia de Monitoramento
+                    </p>
+                </div>
+                </a>
+            </div>
+
+            <div class="col text-center">
+                <a href="#">
+                <div class="category_btn col-md-2 me-3">
+                    <img class="d-flex align-items-center justify-content-center mb-1" src="assets/images/soil.png"></img>
+                    <p class="text-center">
+                        Implemento<br>de Solo
+                    </p>
+                </div>
+                </a>
+            </div>
+
+            <div class="col text-center">
+                <a href="#">
+                <div class="category_btn col-md-2 me-3">
+                    <img class="d-flex align-items-center justify-content-center mb-1" src="assets/images/hoe.png"></img>
+                    <p class="text-center">
+                        Ferramenta<br>de Manutenção
+                    </p>
+                </div>
+                </a>
+            </div>
+            
+            <div class="col text-center">
+                <a href="#">
+                <div class="category_btn col-md-2 me-3">
+                    <img class="d-flex align-items-center justify-content-center mb-1" src="assets/images/fertilizer.png"></img>
+                    <p class="text-center">
+                        Processamento e Armazenamento
+                    </p>
+                </div>
+                </a>
+            </div>
+
+            <div class="col text-center">
+                <a href="#">
+                <div class="category_btn col-md-2 me-3">
+                    <img class="d-flex align-items-center justify-content-center mb-1" src="assets/images/safety-hat.png"></img>
+                    <p class="text-center">
+                        Equipamentos de Proteção (EPIs)
+                    </p>
+                </div>
+                </a>
+            </div>
+
+            <div class="col text-center">
+                <a href="#">
+                <div class="category_btn col-md-2 me-3">
+                    <img class="d-flex align-items-center justify-content-center mb-1" src="assets/images/credit.png"></img>
+                    <p class="text-center">
+                        Crédito Rural
+                    </p>
+                </div>
+                </a>
+            </div>
+
+            <div class="col text-center">
+                <a href="#">
+                <div class="category_btn col-md-2 me-3">
+                    <img class="d-flex align-items-center justify-content-center mb-1" src="assets/images/money.png"></img>
+                    <p class="text-center">
+                        Educação Financeira
+                    </p>
+                </div>
+                </a>
+            </div>
+
+            <div class="col text-center">
+                <a href="#">
+                <div class="category_btn col-md-2 me-3">
+                    <img class="d-flex align-items-center justify-content-center mb-1" src="assets/images/agriculture.png"></img>
+                    <p class="text-center">
+                        Planejamento Rural
+                    </p>
+                </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- SEÇÃO DE PROMOÇÕES DE BLACK -->
+        <div class="d-flex justify-content-between align-items-center mb-4 mt-4">
+        <h2 class="font-family-primary">Promoções de Black <span class="text-warning">⚡</span></h2>
+        <div class="d-flex align-items-center">
+            <span class="me-2">Termina em</span>
+            <div id="countdown" class="d-flex align-items-center">
+            <div class="countdown-item text-center">
+                <span class="bg-custom-primary text-white rounded px-2 py-1 mx-1" id="days">00</span>
+                <div class="countdown-label">Dias</div>
+            </div>
+            <div class="countdown-item text-center">
+                <span class="bg-custom-primary text-white rounded px-2 py-1 mx-1" id="hours">00</span>
+                <div class="countdown-label">Horas</div>
+            </div>
+            <div class="countdown-item text-center">
+                <span class="bg-custom-primary text-white rounded px-2 py-1 mx-1" id="minutes">00</span>
+                <div class="countdown-label">Minutos</div>
+            </div>
+            <div class="countdown-item text-center">
+                <span class="bg-custom-primary text-white rounded px-2 py-1 mx-1" id="seconds">00</span>
+                <div class="countdown-label">Segundos</div>
+            </div>
+            </div>
+        </div>
+        </div>
+        
+        <div id="black-friday-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators custom-indicators"></div>
+            <div class="carousel-inner" id="black-friday-carousel-inner"></div>
+            
+            <!-- Controles do Carrossel -->
+            <button class="carousel-control-prev custom-control" type="button" data-bs-target="#black-friday-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next custom-control" type="button" data-bs-target="#black-friday-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- CARD SECTION 01 -->
+<div id="easier-choice" class="container my-5">
+    <div class="d-flex align-items-center mb-2">
+        <h2 class="font-family-primary me-2">Saiba o que outros agricultores estão usando</h2>
+        <span class="badge bg-custom-secondary text-custom-primary">Feito para você</span>
+    </div>
+
+    <!-- Linha de Cards de Escolha -->
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-3">
+        <!-- Card 1 -->
+        <div class="col">
+            <div class="card text-white bg-gradient-purple p-3 shadow-sm h-100">
+                <div class="d-flex align-items-center mb-3">
+                    <i class="bi bi-fire fs-2"></i>
+                    <div class="ms-3">
+                        <h5 class="mb-0">O que está em alta</h5>
+                        <small>Produtos</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Card 2 -->
+        <div class="col">
+            <div class="card text-white bg-gradient-teal p-3 shadow-sm h-100">
+                <div class="d-flex align-items-center mb-3">
+                    <i class="bi bi-search fs-2"></i>
+                    <div class="ms-3">
+                        <h5 class="mb-0">Mais procurados</h5>
+                        <small>Produtos</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Card 3 -->
+        <div class="col">
+            <div class="card text-white bg-gradient-red p-3 shadow-sm h-100">
+                <div class="d-flex align-items-center mb-3">
+                    <i class="bi bi-coin fs-2"></i>
+                    <div class="ms-3">
+                        <h5 class="mb-0">Investimento para seu negócio</h5>
+                        <small>Crédito Rural</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Card 4 -->
+        <div class="col">
+            <div class="card text-white bg-gradient-orange p-3 shadow-sm h-100">
+                <div class="d-flex align-items-center mb-3">
+                    <i class="bi bi-clipboard2-data fs-2"></i>
+                    <div class="ms-3">
+                        <h5 class="mb-0">Administre sua receita</h5>
+                        <small>Educação Financeira</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Card 5 -->
+        <div class="col">
+            <div class="card text-white bg-gradient-pink p-3 shadow-sm h-100">
+                <div class="d-flex align-items-center mb-3">
+                    <i class="bi bi-brightness-alt-high fs-2"></i>
+                    <div class="ms-3">
+                        <h5 class="mb-0">Cultive do jeito certo</h5>
+                        <small>Planejamento Rural</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- CARD SECTION 02 -->
+    <div id="product-info-section" class="container my-5">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+            <!-- Card 1 -->
+            <div class="col">
+                <div class="card h-100 p-3 shadow-sm">
+                    <div class="card-body">
+                        <div class="d-flex align-items-start mb-3">
+                            <div class="color-bar bg-blue me-2"></div>
+                            <h6 class="card-title mb-0">Produtos para melhor a irrigação</h6>
+                        </div>
+                        <div class="product-thumbnail bg-secondary mx-auto rounded"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col">
+                <div class="card h-100 p-3 shadow-sm">
+                    <div class="card-body">
+                        <div class="d-flex align-items-start mb-3">
+                            <div class="color-bar bg-pink me-2"></div>
+                            <h6 class="card-title mb-0">Acabe com pragas e infestações</h6>
+                        </div>
+                        <div class="product-thumbnail bg-secondary mx-auto rounded"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col">
+                <div class="card h-100 p-3 shadow-sm">
+                    <div class="card-body">
+                        <div class="d-flex align-items-start mb-3">
+                            <div class="color-bar bg-purple me-2"></div>
+                            <h6 class="card-title mb-0">Frutos maiores e em mais quantidade</h6>
+                        </div>
+                        <div class="product-thumbnail bg-secondary mx-auto rounded"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col">
+                <div class="card h-100 p-3 shadow-sm">
+                    <div class="card-body">
+                        <div class="d-flex align-items-start mb-3">
+                            <div class="color-bar bg-red me-2"></div>
+                            <h6 class="card-title mb-0">Estratégias de crescimento</h6>
+                        </div>
+                        <div class="product-thumbnail bg-secondary mx-auto rounded"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- PRODUCT SECTION -->
+    <div id="product-list" class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="text-start font-family-primary">Produtos para o seu negócio</h2>
+            </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-2 mt-2" id="product-container"></div>
+    </div>
+
+    <!-- BEST SELLERS SECTION -->
+    <div id="best-sellers-section" class="container my-5">
+    <h2 class="mb-4">Melhores Vendedores</h2>
+    
+    <div id="best-sellers-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators custom-indicators"></div>
+        <div class="carousel-inner" id="best-sellers-carousel-inner"></div>
+        
+        <!-- Controles do Carrossel -->
+        <button class="carousel-control-prev custom-control" type="button" data-bs-target="#best-sellers-carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next custom-control" type="button" data-bs-target="#best-sellers-carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Próximo</span>
+        </button>
+    </div>
+    </div>
+
+    <footer class="bg-custom-primary text-white py-5">
+    <div class="container">
+        <div class="row">
+            <!-- Coluna Logo e Endereço -->
+            <div class="col-md-4">
+                <img src="assets/svg/LOGO_1.svg" alt="Zé Aluga Logo" class="mb-3" style="width: 150px;">
+                <address>
+                    <p class="text-custom-tertiary">Avenida das Nações Unidas, nº 3.003, bairro Bonfim, Osasco, São Paulo, CEP 06233-903</p>
+                    <p class="text-custom-secondary"><i class="bi bi-clock text-custom-secondary"></i> Segunda - Sexta / 8AM até 6PM</p>
+                    <p class="text-custom-secondary"><i class="bi bi-telephone text-custom-secondary"></i> +55 (11) 99999-9999</p>
+                </address>
+            </div>
+
+            <!-- Coluna Navigation -->
+            <div class="col-md-2">
+                <h5 class="text-uppercase text-custom-secondary">Navigation</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Sobre nós</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Nossos Serviços</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Trabalhe Conosco</a></li>
+                </ul>
+            </div>
+
+            <!-- Coluna Services -->
+            <div class="col-md-2">
+                <h5 class="text-uppercase text-custom-secondary">Services</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white text-decoration-none">Aluguel de Equipamentos</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Logística e Entregas</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Seja um Seller</a></li>
+                </ul>
+            </div>
+
+            <!-- Coluna Help -->
+            <div class="col-md-2">
+                <h5 class="text-uppercase text-custom-secondary">Help</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white text-decoration-none">Suporte ao Consumidor</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Como Funciona?</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Termos & Condições</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Política e Privacidade</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Linha inferior com redes sociais e copyright -->
+        <div class="row mt-4">
+            <div class="col-md-6 d-flex align-items-center ">
+                <a href="#" class="text-white me-3"><i class="bi bi-facebook color-custom-secondary"></i></a>
+                <a href="#" class="text-white me-3"><i class="bi bi-twitter color-custom-secondary"></i></a>
+                <a href="#" class="text-white me-3"><i class="bi bi-linkedin color-custom-secondary"></i></a>
+                <a href="#" class="text-white"><i class="bi bi-instagram color-custom-secondary"></i></a>
+            </div>
+            <div class="col-md-6 text-md-end text-custom-secondary">
+                <small>&copy; 2024 Zé Aluga | Designed by Thenopholo</small>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+    
+    <script src="js/header_component.js"></script>
+    <script src="js/product_card_component.js"></script>
+    <script src="js/fetch_products.js"></script>
+    <script src="js/black_friday_component.js"></script>
+    <script src="js/fetch_black.js"></script>
+    <script src="js/seller_card_components.js"></script>
+    <script src="js/fetch_sellers.js"></script>
+    <script src="js/countdown.js"></script>
 </body>
 </html>
