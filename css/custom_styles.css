@@ -1,0 +1,31 @@
+.color-custom-primary {
+  color: #003321;
+}
+
+.color-custom-secondary {
+  color: #DCFFD7;
+}
+
+.bg-custom-primary {
+  background-color: #003321;
+}
+
+.bg-custom-secondary {
+  background-color: #DCFFD7;
+}
+
+.outline-custom-primary {
+  border-color: #003321;
+}
+
+.outline-custom-secondary {
+  border-color: #DCFFD7;
+}
+
+.text-custom-primary {
+  color: #003321;
+}
+
+.text-custom-secondary {
+  color: #DCFFD7;
+}
