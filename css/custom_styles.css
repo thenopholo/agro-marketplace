@@ -58,6 +58,10 @@ a {
   font-size: 24px;
 }
 
+.fs-font-headings-product-page {
+  font-size: 32px !important;
+}
+
 .fs-product-card-title {
   font-size: 14px;
 }
