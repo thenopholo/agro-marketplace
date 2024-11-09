@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "category": "Máquinas de Plantio e Colheita",
     "name": "Plantadeira Modelo A",
     "price": "R$ 18.000",
@@ -19,6 +20,7 @@
     }
   },
   {
+    "id": 2,
     "category": "Máquinas de Plantio e Colheita",
     "name": "Colheitadeira Série B",
     "price": "R$ 32.000",
@@ -37,6 +39,7 @@
     }
   },
   {
+    "id": 3,
     "category": "Máquinas de Plantio e Colheita",
     "name": "Trator Agrícola X100",
     "price": "R$ 50.000",
@@ -56,6 +59,7 @@
     }
   },
   {
+    "id": 4,
     "category": "Equipamentos de Irrigação",
     "name": "Sistema de Aspersão Compacto",
     "price": "R$ 3.500",
@@ -75,6 +79,7 @@
     }
   },
   {
+    "id": 5,
     "category": "Equipamentos de Irrigação",
     "name": "Mangueira de Irrigação por Gotejamento",
     "price": "R$ 1.000",
@@ -93,6 +98,7 @@
     }
   },
   {
+    "id": 6,
     "category": "Equipamentos de Irrigação",
     "name": "Sistema de Microaspersão",
     "price": "R$ 2.500",
@@ -112,6 +118,7 @@
     }
   },
   {
+    "id": 7,
     "category": "Tecnologia de Monitoramento",
     "name": "Drone Agrícola Z-200",
     "price": "R$ 20.000",
@@ -131,6 +138,7 @@
     }
   },
   {
+    "id": 8,
     "category": "Tecnologia de Monitoramento",
     "name": "Sensor de Umidade do Solo",
     "price": "R$ 2.000",
@@ -149,6 +157,7 @@
     }
   },
   {
+    "id": 9,
     "category": "Tecnologia de Monitoramento",
     "name": "Estação Meteorológica Compacta",
     "price": "R$ 5.500",
@@ -168,6 +177,7 @@
     }
   },
   {
+    "id": 10,
     "category": "Implementos de Solo",
     "name": "Grade Aradora",
     "price": "R$ 12.000",
@@ -186,6 +196,7 @@
     }
   },
   {
+    "id": 11,
     "category": "Implementos de Solo",
     "name": "Subsolador S-100",
     "price": "R$ 8.500",
@@ -205,6 +216,7 @@
     }
   },
   {
+    "id": 12,
     "category": "Implementos de Solo",
     "name": "Sulcador de Cana",
     "price": "R$ 5.000",
@@ -223,6 +235,7 @@
     }
   },
   {
+    "id": 13,
     "category": "Ferramentas de Manutenção",
     "name": "Chave de Impacto Agrícola",
     "price": "R$ 800",
@@ -242,6 +255,7 @@
     }
   },
   {
+    "id": 14,
     "category": "Ferramentas de Manutenção",
     "name": "Lubrificador Manual",
     "price": "R$ 250",
@@ -260,6 +274,7 @@
     }
   },
   {
+    "id": 15,
     "category": "Ferramentas de Manutenção",
     "name": "Conjunto de Chaves de Boca",
     "price": "R$ 300",
@@ -279,6 +294,7 @@
     }
   },
   {
+    "id": 16,
     "category": "Processamento e Armazenamento",
     "name": "Secador de Grãos",
     "price": "R$ 40.000",
@@ -298,6 +314,7 @@
     }
   },
   {
+    "id": 17,
     "category": "Processamento e Armazenamento",
     "name": "Silo para Grãos",
     "price": "R$ 25.000",
@@ -316,6 +333,7 @@
     }
   },
   {
+    "id": 18,
     "category": "Processamento e Armazenamento",
     "name": "Classificador de Sementes",
     "price": "R$ 15.000",
@@ -335,6 +353,7 @@
     }
   },
   {
+    "id": 19,
     "category": "Equipamentos de Proteção (EPIs)",
     "name": "Máscara de Proteção Respiratória",
     "price": "R$ 50",
@@ -353,6 +372,7 @@
     }
   },
   {
+    "id": 20,
     "category": "Equipamentos de Proteção (EPIs)",
     "name": "Luva de Segurança em Couro",
     "price": "R$ 30",
@@ -372,6 +392,7 @@
     }
   },
   {
+    "id": 21,
     "category": "Equipamentos de Proteção (EPIs)",
     "name": "Óculos de Proteção UV",
     "price": "R$ 20",
@@ -391,6 +412,7 @@
     }
   },
   {
+    "id": 22,
     "category": "Máquinas de Plantio e Colheita",
     "name": "Enfardadeira Compacta",
     "price": "R$ 28.000",
@@ -410,6 +432,7 @@
     }
   },
   {
+    "id": 23,
     "category": "Equipamentos de Irrigação",
     "name": "Aspersor de Impacto Industrial",
     "price": "R$ 900",
@@ -428,6 +451,7 @@
     }
   },
   {
+    "id": 24,
     "category": "Ferramentas de Manutenção",
     "name": "Macaco Hidráulico para Tratores",
     "price": "R$ 1.500",
@@ -447,6 +471,7 @@
     }
   },
   {
+    "id": 25,
     "category": "Equipamentos de Proteção (EPIs)",
     "name": "Protetor Auditivo Confortável",
     "price": "R$ 40",
