@@ -5,11 +5,11 @@ fetch('json/users.json')
     const carouselInner = document.getElementById('best-sellers-carousel-inner');
     const indicators = document.querySelector('#best-sellers-carousel .carousel-indicators');
 
-    const itemsPerSlide = 4; // Número de vendedores por slide
+    const itemsPerSlide = 4;
 
     for (let i = 0; i < sellers.length; i += itemsPerSlide) {
       const carouselItem = document.createElement('div');
-      carouselItem.className = 'carousel-item';
+      carouselItem.className = 'carousel-item'; 
       if (i === 0) carouselItem.classList.add('active');
 
       const row = document.createElement('div');
@@ -29,7 +29,7 @@ fetch('json/users.json')
       carouselItem.appendChild(row);
       carouselInner.appendChild(carouselItem);
 
-      // Adicionar indicador do carrossel
+      
       const indicator = document.createElement('button');
       indicator.type = 'button';
       indicator.dataset.bsTarget = '#best-sellers-carousel';
