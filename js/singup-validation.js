@@ -3,8 +3,8 @@
 document.addEventListener('DOMContentLoaded', function() {
     function selectUserType(userType) {
         const userTypeInput = document.getElementById('userTypeInput');
-        
         userTypeInput.value = userType;
+        validateUserType(userTypeInput);
     }
 
     function formatWhatsApp(phone) {
@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     whatsappInput.addEventListener('input', function() {
         this.value = formatWhatsApp(this.value);
+        validateWhatsapp(this);
     });
 
     const dropdownItems = document.querySelectorAll('.dropdown-item');
@@ -44,62 +45,88 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    function validateName(name) {
-        return name.trim().length >= 2;
+    function validateName(input) {
+        const name = input.value.trim();
+        const isValidName = name.length >= 2;
+
+        if (isValidName) {
+            input.classList.remove('is-invalid');
+            input.classList.add('is-valid');
+        } else {
+            input.classList.remove('is-valid');
+            input.classList.add("is-invalid");
+        }
+
+        return isValidName;
     }
 
-    function validateEmail(email) {
+    function validateEmail(input) {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        return emailRegex.test(email.trim());
+        const isValidEmail = emailRegex.test(input.value.trim());
+
+        if (isValidEmail){
+            input.classList.remove('is-invalid');
+            input.classList.add('is-valid');
+        } else {
+            input.classList.remove('is-valid');
+            input.classList.add("is-invalid");
+        }
+
+        return isValidEmail;
     }
 
-    function validateWhatsapp(phone) {
-        const cleanedPhone = phone.replace(/\D/g, '');
-        
-        return cleanedPhone.length === 10 || cleanedPhone.length === 11;
+    function validateWhatsapp(input) {
+        const cleanedPhone = input.value.replace(/\D/g, '');
+        const isValidPhone = cleanedPhone.length === 10 || cleanedPhone.length === 11;
+
+        if (isValidPhone) {
+            input.classList.remove('is-invalid');
+            input.classList.add('is-valid');
+        } else {
+            input.classList.remove('is-valid');
+            input.classList.add("is-invalid");
+        }
+
+        return isValidPhone;
+    }
+
+    function validateUserType(input) {
+        const isValidUserType = !!input.value;
+
+        if (isValidUserType) {
+            input.classList.remove('is-invalid');
+            input.classList.add('is-valid');
+        } else {
+            input.classList.remove('is-valid');
+            input.classList.add("is-invalid");
+        }
+
+        return isValidUserType;
+    }
+
+    function validateTerms(input) {
+        const isValidTerm = input.checked;
+
+        if (isValidTerm) {
+            input.classList.remove('is-invalid');
+            input.classList.add('is-valid');
+        } else {
+            input.classList.remove('is-valid');
+            input.classList.add("is-invalid");
+        }
+
+        return isValidTerm;
     }
 
     function validateForm() {
-        let isValid = true;
-        
-        [nameInput, lastNameInput, emailInput, whatsappInput, userTypeInput].forEach(input => {
-            input.classList.remove('is-invalid');
-        });
-        termsCheckbox.classList.remove('is-invalid');
-        termsCheckbox.parentElement.classList.remove('text-danger');
+        const nameValid = validateName(nameInput);
+        const lastNameValid = validateName(lastNameInput);
+        const emailValid = validateEmail(emailInput);
+        const whatsappValid = validateWhatsapp(whatsappInput);
+        const userTypeValid = validateUserType(userTypeInput);
+        const termsValid = validateTerms(termsCheckbox);
 
-        if (!validateName(nameInput.value)) {
-            nameInput.classList.add('is-invalid');
-            isValid = false;
-        }
-
-        if (!validateName(lastNameInput.value)) {
-            lastNameInput.classList.add('is-invalid');
-            isValid = false;
-        }
-
-        if (!validateEmail(emailInput.value)) {
-            emailInput.classList.add('is-invalid');
-            isValid = false;
-        }
-
-        if (!validateWhatsapp(whatsappInput.value)) {
-            whatsappInput.classList.add('is-invalid');
-            isValid = false;
-        }
-
-        if (!userTypeInput.value) {
-            userTypeInput.classList.add('is-invalid');
-            isValid = false;
-        }
-
-        if (!termsCheckbox.checked) {
-            termsCheckbox.classList.add('is-invalid');
-            termsCheckbox.parentElement.classList.add('text-danger');
-            isValid = false;
-        }
-
-        return isValid;
+        return nameValid && lastNameValid && emailValid && whatsappValid && userTypeValid && termsValid;
     }
 
     const styleSheet = document.createElement('style');
@@ -109,6 +136,9 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         .is-invalid::placeholder {
             color: red !important;
+        }
+        .is-valid {
+            border: 2px solid green !important;
         }
         .text-danger {
             color: red !important;
@@ -135,9 +165,10 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });    
 
-    [nameInput, lastNameInput, emailInput, whatsappInput, userTypeInput].forEach(input => {
-        input.addEventListener('blur', validateForm);
-    });
-
+    nameInput.addEventListener('blur', () => validateName(nameInput));
+    lastNameInput.addEventListener('blur', () => validateName(lastNameInput));
+    emailInput.addEventListener('blur', () => validateEmail(emailInput));
+    whatsappInput.addEventListener('blur', () => validateWhatsapp(whatsappInput));
+    termsCheckbox.addEventListener('change', () => validateTerms(termsCheckbox));
     termsCheckbox.addEventListener('change', validateForm);
 });
