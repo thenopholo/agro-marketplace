@@ -79,6 +79,9 @@ class ProductPageComponent {
         <!-- Informações do Produto -->
         <div class="col-md-7">
           <span class="badge bg-custom-secondary text-custom-primary font-family-secondary mb-2 ">${product.category}</span>
+          <span class="badge ${product.is_available ? 'bg-success' : 'bg-danger'}">
+              ${product.is_available ? `Em Estoque (${product.available_units} unidades)` : 'Esgotado'}
+             </span>
           <h2 class="product-title text-custom-primary font-family-primary fw-bold fs-font-headings-product-page">${product.name}</h2>
           <p><span class="text-warning">★ ★ ★ ★ ☆</span> (4.7)</p>
           <p class="price text-custom-primary font-family-primary fw-bold fs-font-headings">${product.price}</p>
@@ -102,8 +105,8 @@ class ProductPageComponent {
 
           <h3 class="text-custom-primary font-family-primary fw-bold">Selecione o Período</h3>
           <input type="text" id="dateRangePicker" class="form-control flatpickr-input mb-2" placeholder="Selecione uma data de ínicio e fim">
-          <button class="btn btn-buy">Alugar Agora</button>
-          <button class="btn btn-cart">Adicionar ao Carrinho</button>
+          <button class="btn btn-buy" ${product.is_available ? '' : 'disabled'}>Alugar Agora</button>
+          <button class="btn btn-cart" ${product.is_available ? '' : 'disabled'}>Adicionar ao Carrinho</button>
 
           <!-- Informações do Vendedor -->
           <div class="seller-info">

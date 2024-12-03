@@ -61,3 +61,17 @@
     font-size: 1.2rem;
     margin-right: 10px;
   }
+
+  .bg-success {
+    background-color: #28a745 !important;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .bg-danger {
+    background-color: #dc3545 !important;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
