@@ -44,19 +44,15 @@ class HeaderComponent extends HTMLElement {
             <div class="d-flex align-items-center">
                 <!-- Dropdown para Categorias -->
                 <div class="dropdown me-2">
-                    <button class="btn outline-custom-secondary text-custom-secondary dropdown-toggle" type="button" id="dropdownCategorias" data-bs-toggle="dropdown" aria-expanded="false">
-                        Categorias
-                    </button>
-                    <ul class="dropdown-menu custom-dropdown" aria-labelledby="dropdownCategorias">
-                        <li><a class="dropdown-item" href="#">Categoria 1</a></li>
-                        <li><a class="dropdown-item" href="#">Categoria 2</a></li>
-                        <li><a class="dropdown-item" href="#">Categoria 3</a></li>
-                    </ul>
+                    <a href="advance_search.html" id="zeBuscaBtn" class="btn outline-custom-secondary text-custom-secondary">
+                        Zé Busca
+                    </a>
+
                 </div>
 
-                <i class="bi bi-bell me-2" style="font-size: 1.2rem;"></i>
-                <i class="bi bi-shop-window me-2" style="font-size: 1.2rem;"></i>
-                <i class="bi bi-cart me-2" style="font-size: 1.2rem;"></i>
+                <!-- <i class="bi bi-bell me-2" style="font-size: 1.2rem;"></i> -->
+                <!-- <i class="bi bi-shop-window me-2" style="font-size: 1.2rem;"></i> -->
+                <!-- <i class="bi bi-cart me-2" style="font-size: 1.2rem;"></i> -->
                 <div id="logs" class="d-flex align-items-center">
                     <a href="singin.html" id="singup" class="btn bg-custom-secondary text-custom-primary me-2">Entrar</a>
                     <a href="singup.html" id="singin" class="btn bg-custom-secondary text-custom-primary">Cadastrar</a>

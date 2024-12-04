@@ -86,3 +86,8 @@ a {
   font-size: 10px !important;
 }
 
+.form-check-input:checked {
+  background-color: #003321;
+  border-color: #003321;
+}
+

@@ -65,3 +65,10 @@
   background-color: #f0f0f0;
   color: #000;
 }
+
+#zeBuscaBtn:hover{
+  background-color: #DCFFD7; 
+  color: #003321;
+  margin: 2px;
+  box-shadow: 5px 5px 10px #000;
+}

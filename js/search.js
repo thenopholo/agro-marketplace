@@ -1,4 +1,3 @@
-// search.js
 document.addEventListener('DOMContentLoaded', () => {
   customElements.whenDefined('header-component').then(() => {
     const headerComponent = document.querySelector('header-component');
