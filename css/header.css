@@ -35,3 +35,40 @@
 #logs > a{
   text-decoration: none;
 }
+
+
+#search-results {
+  max-height: 200px;
+  overflow-y: auto;
+  background-color: white;
+  border: 1px solid #ccc;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  display: none;
+  /* Inicialmente escondido */
+}
+
+#search-results li {
+  cursor: pointer;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  color: #000;
+}
+
+#search-results li:hover {
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+#zeBuscaBtn:hover{
+  background-color: #DCFFD7; 
+  color: #003321;
+  margin: 2px;
+  box-shadow: 5px 5px 10px #000;
+}
