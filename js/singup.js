@@ -1,5 +1,3 @@
-// import { showToast } from './toastify.js';
-
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('form-card');
   const cadastrarBtn = document.querySelector('.btn.bg-custom-secondary');
