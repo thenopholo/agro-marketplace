@@ -53,11 +53,13 @@
               </div>
             </div>
 
+
             <div class="row mt-3">
               <div class="col-md-12">
                 <div class="dropdown">
                   <input type="text" id="userTypeInput" placeholder="Selecione o objetivo no Zé Aluga" class="form-control dropdown-toggle" data-bs-toggle="dropdown" readonly>
                   <i class="bi bi-chevron-down dropdown-icon"></i>
+
 
                   <ul class="dropdown-menu w-100 custom-dropdown">
                     <li><a class="dropdown-item" href="#" onclick="selectUserType('Quero alugar')">Quero alugar</a></li>
@@ -92,11 +94,7 @@
     </div>
   </div>
 
-  <script>
-    function selectUserType(userType) {
-      document.getElementById('userTypeInput').value = userType;
-    }
-  </script>
+  <script src="js\singup-validation.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
